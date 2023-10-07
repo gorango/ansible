@@ -2,7 +2,7 @@
   git_config:
     name: user.email
     scope: global
-    value: "the.primeagen@gmail.com"
+    value: "gospaso@gmail.com"
   tags:
   - git-personal
 - name: Git personal setup name
