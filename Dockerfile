@@ -10,14 +10,14 @@ RUN apt-get update && \
     apt-get clean autoclean && \
     apt-get autoremove --yes
 
-FROM base AS prime
+FROM base AS g
 ARG TAGS
-RUN addgroup --gid 1000 gorango
-RUN adduser --gecos gorango --uid 1000 --gid 1000 --disabled-password gorango
-USER gorango
-WORKDIR /home/gorango
+RUN addgroup --gid 1000 g
+RUN adduser --gecos g --uid 1000 --gid 1000 --disabled-password g
+USER g
+WORKDIR /home/g
 
-FROM prime
+FROM g
 COPY . .
 CMD ["sh", "-c", "ansible-playbook $TAGS local.yml"]
 
