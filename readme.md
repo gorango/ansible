@@ -486,9 +486,10 @@ ln -s ~/m/dotfiles/.hushlogin ~/.hushlogin
 ln -s ~/m/dotfiles/.xprofile ~/.xprofile
 ln -s ~/m/dotfiles/.device ~/.device
 ln -s ~/m/dotfiles/bin/tmux-sessionizer ~/.local/bin/tmux-sessionizer
-ln -sf ~/m/dotfiles/bin/cht.sh ~/.local/bin/cht.sh
-ln -sf ~/m/dotfiles/bin/.cht-command ~/.cht-command
-ln -sf ~/m/dotfiles/bin/.cht-languages ~/.cht-languages
+ln -s ~/m/dotfiles/bin/cht.sh ~/.local/bin/cht.sh
+ln -s ~/m/dotfiles/bin/.cht-command ~/.cht-command
+ln -s ~/m/dotfiles/bin/.cht-languages ~/.cht-languages
+ln -s ~/m/dotfiles/bin/find-and-replace ~/.local/bin/fr
 ```
 
 ### `$HOME/.config`
@@ -499,8 +500,6 @@ ln -sf ~/m/dotfiles/.config/i3status ~/.config/i3status
 ln -sf ~/m/dotfiles/.config/nvim ~/.config/nvim
 ln -sf ~/m/dotfiles/.config/redshift ~/.config/redshift
 ln -sf ~/m/dotfiles/.config/autostart ~/.config/autostart
-ln -sf ~/m/dotfiles/.config/Code/User/settings.json ~/.config/Code/User/settings.json
-ln -sf ~/m/dotfiles/.config/Code/User/keybindings.json ~/.config/Code/User/keybindings.json
 ```
 
 ### `$HOME/Downloads`
