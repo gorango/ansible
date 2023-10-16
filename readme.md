@@ -500,6 +500,7 @@ ln -sf ~/m/dotfiles/.config/i3status ~/.config/i3status
 ln -sf ~/m/dotfiles/.config/nvim ~/.config/nvim
 ln -sf ~/m/dotfiles/.config/redshift ~/.config/redshift
 ln -sf ~/m/dotfiles/.config/autostart ~/.config/autostart
+ln -sf ~/m/dotfiles/.config/lazygit/config.yml ~/.config/lazygit/config.yml
 ```
 
 ### `$HOME/Downloads`
