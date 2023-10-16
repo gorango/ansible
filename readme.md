@@ -119,7 +119,6 @@ curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-git clone https://github.com/lukechilds/zsh-nvm $ZSH_CUSTOM/plugins/zsh-nvm
 git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 ```
 
@@ -139,7 +138,7 @@ rm ~/.zcompdump*; compinit
 <hr>
 
 - [python](#python-pyenv)
-- [node](#node-nvm)
+- [node](#node-fnm)
 - [ruby](#ruby-rbenv)
 - [rust](#rust)
 - [go](#go)
@@ -154,11 +153,11 @@ pyenv install -v 3.10
 pyenv global 3.10
 ```
 
-### node (nvm)
+### node (fnm)
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-nvm install --lts
+curl -fsSL https://fnm.vercel.app/install | bash
+fnm install --lts
 npm i -g \
 	yarn nodemon pm2 turbo typescript eslint @antfu/ni diff-so-fancy \
 	tldr gtop live-server
