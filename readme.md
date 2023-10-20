@@ -10,7 +10,7 @@ Debian workbench copy-pasta
 ```sh
 sudo apt install -y \
 	build-essential ca-certificates software-properties-common gnupg lsb-release apt-transport-https \
-	curl ripgrep neovim fzf fd-find lsd xclip xdotool maim tree rename neofetch \
+	curl ripgrep neovim fd-find lsd xclip xdotool maim tree rename neofetch \
 	ffmpeg vlc feh shotwell light xbacklight redshift autorandr \
 	pandoc lynx fonts-powerline xbindkeys jq \
 	git hub gh cloc gource xvfb
@@ -354,6 +354,13 @@ curl -sS https://webinstall.dev/k9s | bash
 
 ### misc
 
+#### [fzf](https://github.com/junegunn/fzf)
+
+```sh 
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
 #### [stripe](https://stripe.com/docs/stripe-cli)
 
 ```sh
@@ -367,6 +374,13 @@ sudo apt install stripe
 
 ```sh
 go install github.com/ericchiang/pup@latest
+```
+
+#### [yq](https://github.com/mikefarah/yq/#install)
+
+```sh 
+sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq &&\
+    chmod +x /usr/bin/yq
 ```
 
 <br>
