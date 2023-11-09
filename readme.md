@@ -284,6 +284,7 @@ rm /tmp/pg_hashids -rf
 
 - [docker](#docker)
 - [lazygit](#lazygit)
+- [postman](#postman)
 - [terraform](#terraform)
 - [helm](#helm)
 - [kubernetes](#kubernetes)
@@ -302,6 +303,12 @@ docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 ```sh
 go install github.com/jesseduffield/lazygit@latest
+```
+
+### postman
+
+```sh
+curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
 ```
 
 ### [terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
