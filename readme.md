@@ -299,6 +299,12 @@ sudo apt install -y \
 docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+```sh
+latest_dcv=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
+sudo curl -L "https://github.com/docker/compose/releases/download/$latest_dcv/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
 ### lazygit
 
 ```sh
