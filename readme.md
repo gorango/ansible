@@ -1,6 +1,6 @@
 # ansible
 
-Debian workbench copy-pasta
+Workbench copy-pasta
 
 <details>
 <summary><code>init</code></summary>
@@ -11,7 +11,7 @@ Debian workbench copy-pasta
 sudo apt install -y \
 	build-essential ca-certificates software-properties-common gnupg lsb-release apt-transport-https \
 	curl ripgrep neovim fd-find lsd xclip xdotool maim tree rename neofetch \
-	ffmpeg vlc feh shotwell light xbacklight redshift autorandr \
+	ffmpeg vlc feh shotwell light xbacklight redshift autorandr compton \
 	pandoc lynx fonts-powerline xbindkeys jq \
 	git hub gh cloc gource xvfb
 ```
@@ -516,6 +516,7 @@ ln -s ~/m/dotfiles/bin/cht.sh ~/.local/bin/cht.sh
 ln -s ~/m/dotfiles/bin/.cht-command ~/.cht-command
 ln -s ~/m/dotfiles/bin/.cht-languages ~/.cht-languages
 ln -s ~/m/dotfiles/bin/find-and-replace ~/.local/bin/fr
+ln -s ~/m/dotfiles/bin/gray ~/.local/bin/gray
 ```
 
 ### `$HOME/.config`
