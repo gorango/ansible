@@ -1,5 +1,3 @@
-# ansible
-
 Workbench copy-pasta
 
 <details>
@@ -99,6 +97,7 @@ To update all plugins: `C-b U` or `~/.tmux/plugins/tpm/scripts/update_plugin.sh`
 - [antibody](#antibody)
 - [zsh plugins](#zsh-plugins)
 - [zoxide](#zoxide)
+- [nerd-fonts](#nerd-fonts)
 
 <hr>
 
@@ -127,6 +126,21 @@ git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 ```sh
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 rm ~/.zcompdump*; compinit
+```
+
+### [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+
+JetBrainsMono
+
+```sh
+cd ~/Downloads
+nf_redirect=$(curl -s -L -w "%{url_effective}" -o /dev/null "https://github.com/ryanoasis/nerd-fonts/releases/latest")
+nf_version=$(echo "$nf_redirect" | grep -oP 'tag/v\K[^/]+')
+nf_url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${nf_version}/JetBrainsMono.zip"
+wget $nf_url
+unzip JetBrainsMono.zip -d nerd-fonts
+cp nerd-fonts/JetBrainsMonoNerdFont-Medium.ttf ~/.local/share/fonts
+fc-cache -f -v
 ```
 
 <br>
