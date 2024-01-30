@@ -10,7 +10,7 @@ sudo apt install -y \
 	build-essential ca-certificates software-properties-common gnupg lsb-release apt-transport-https \
 	curl ripgrep neovim fd-find lsd xclip xdotool maim tree rename neofetch \
 	ffmpeg vlc feh shotwell light xbacklight redshift autorandr compton \
-	pandoc lynx fonts-powerline xbindkeys jq \
+	imagemagick poppler-utils pandoc lynx fonts-powerline xbindkeys jq \
 	git hub gh cloc gource xvfb
 ```
 
