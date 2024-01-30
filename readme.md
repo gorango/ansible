@@ -531,6 +531,8 @@ ln -s ~/m/dotfiles/bin/.cht-command ~/.cht-command
 ln -s ~/m/dotfiles/bin/.cht-languages ~/.cht-languages
 ln -s ~/m/dotfiles/bin/find-and-replace ~/.local/bin/fr
 ln -s ~/m/dotfiles/bin/gray ~/.local/bin/gray
+ln -s ~/m/dotfiles/bin/cursor ~/.local/bin/cursor
+ln -s ~/m/dotfiles/.xbindkeysrc ~/.xbindkeysrc
 ```
 
 ### `$HOME/.config`
