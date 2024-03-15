@@ -6,12 +6,13 @@ Workbench copy-pasta
 <hr>
 
 ```sh
+sudo ubuntu-drivers autoinstall
 sudo apt install -y \
 	build-essential ca-certificates software-properties-common gnupg lsb-release apt-transport-https \
 	curl ripgrep neovim fd-find lsd xclip xdotool maim tree rename neofetch \
 	ffmpeg vlc feh shotwell light xbacklight redshift autorandr compton \
 	imagemagick poppler-utils pandoc lynx fonts-powerline xbindkeys jq \
-	git hub gh cloc gource xvfb
+	git hub gh cloc gource xvfb sqlite3
 ```
 
 <br>
@@ -172,7 +173,8 @@ pyenv global 3.10
 ```sh
 curl -fsSL https://fnm.vercel.app/install | bash
 fnm install --lts
-npm i -g \
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+pnpm add -g \
 	yarn nodemon pm2 turbo typescript eslint @antfu/ni diff-so-fancy \
 	tldr gtop live-server
 ```
@@ -492,7 +494,7 @@ Display > Output = X11 video output (XCB)
 ### chrome.90
 
 ```sh
-wget --no-verbose -O /tmp/chrome.deb https://www.slimjet.com/chrome/download-chrome.php?file=files%2F90.0.4430.72%2Fgoogle-chrome-stable_current_amd64.deb
+wget --no-verbose -O /tmp/chrome.deb http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_96.0.4664.45_amd64.deb
 sudo apt install -y --allow-downgrades /tmp/chrome.deb
 rm /tmp/chrome.deb
 ```
