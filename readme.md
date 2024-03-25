@@ -545,6 +545,19 @@ ssh-add gh
 cat gh.pub
 ```
 
+GitHub CLI Copilot
+
+```sh
+gh extension install github/gh-copilot
+```
+
+DNS Masq
+
+```sh
+v /etc/dnsmasq.conf
+address=/example.com/127.0.0.1#3333
+```
+
 [Add new SSH key](https://github.com/settings/ssh/new)
 
 <br>
