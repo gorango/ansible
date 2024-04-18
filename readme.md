@@ -290,6 +290,15 @@ USE_PGXS=1 sudo make install
 rm /tmp/pg_hashids -rf
 ```
 
+#### dbeaver
+
+```sh
+wget --no-verbose -O /tmp/dbeaver.deb https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
+sudo apt install -y /tmp/dbeaver.deb
+rm /tmp/dbeaver.deb
+```
+
+
 <br>
 </details>
 
