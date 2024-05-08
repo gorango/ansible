@@ -179,12 +179,10 @@ pnpm add -g \
 	tldr gtop live-server
 ```
 
-### ruby (rbenv)
+### go
 
 ```sh
-sudo apt install -y rbenv
-rbenv install 2.6.10
-rbenv global 2.6.10
+curl https://golang.org/dl/go1.20.4.linux-amd64.tar.gz | sudo tar -C /usr/local -xzf -
 ```
 
 ### rust
@@ -193,10 +191,11 @@ rbenv global 2.6.10
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-### go
+### ruby (rbenv)
 
 ```sh
-curl https://golang.org/dl/go1.20.4.linux-amd64.tar.gz | sudo tar -C /usr/local -xzf -
+sudo apt install -y ruby-full
+sudo gem install jekyll bundler
 ```
 
 <br>
