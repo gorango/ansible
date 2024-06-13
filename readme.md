@@ -9,7 +9,7 @@ Workbench copy-pasta
 sudo ubuntu-drivers autoinstall
 sudo apt install -y \
 	build-essential ca-certificates software-properties-common gnupg lsb-release apt-transport-https \
-	curl ripgrep neovim fd-find lsd xclip xdotool maim tree rename neofetch \
+	curl ripgrep neovim fd-find lsd xclip xdotool maim tree rename neofetch baobab \
 	ffmpeg vlc feh shotwell light xbacklight redshift autorandr compton \
 	imagemagick poppler-utils pandoc lynx fonts-powerline xbindkeys jq \
 	git hub gh cloc gource xvfb sqlite3
