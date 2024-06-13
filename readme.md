@@ -168,6 +168,12 @@ pyenv install -v 3.10
 pyenv global 3.10
 ```
 
+#### packages
+
+```sh
+pip install httpstat httpie
+```
+
 ### node (fnm)
 
 ```sh
