@@ -168,10 +168,26 @@ pyenv install -v 3.10
 pyenv global 3.10
 ```
 
+#### [pipx](https://pipx.pypa.io/stable/)
+
+```sh
+sudo apt install pipx
+pipx ensurepath
+sudo pipx ensurepath --global # optional to allow pipx actions with --global argument
+```
+
+#### [poetry](https://python-poetry.org/docs/)
+
+```sh
+curl -sSL https://install.python-poetry.org | python3 -
+mkdir $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+```
+
 #### packages
 
 ```sh
-pip install httpstat httpie
+pipx install httpstat httpie
 ```
 
 ### node (fnm)
