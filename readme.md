@@ -213,6 +213,13 @@ curl https://golang.org/dl/go1.20.4.linux-amd64.tar.gz | sudo tar -C /usr/local 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
+#### packages
+
+```sh
+cargo install htmlq # jq for html https://github.com/mgdm/htmlq
+cargo install nu # nushell https://github.com/nushell/nushell
+```
+
 ### ruby (rbenv)
 
 ```sh
