@@ -622,7 +622,7 @@ ln -sf ~/m/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/m/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sf ~/m/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/m/dotfiles/zsh/custom/* ~/.oh-my-zsh/custom
-touch ~/.private # for private env vars sourced by zsh
+touch ~/.secret # for secret env vars sourced by zsh
 ln -s ~/m/dotfiles/.hushlogin ~/.hushlogin
 ln -s ~/m/dotfiles/.xprofile ~/.xprofile
 ln -s ~/m/dotfiles/.device ~/.device
