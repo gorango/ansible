@@ -3,16 +3,16 @@ Workbench copy-pasta
 <details>
 <summary><code>init</code></summary>
 
-<hr>
+---
 
 ```sh
 sudo ubuntu-drivers autoinstall
 sudo apt install -y \
-	build-essential ca-certificates software-properties-common gnupg lsb-release apt-transport-https \
-	curl ripgrep neovim fd-find lsd xclip xdotool maim tree rename neofetch baobab \
-	ffmpeg vlc feh shotwell light xbacklight redshift autorandr compton \
-	imagemagick poppler-utils pandoc lynx fonts-powerline xbindkeys jq \
-	git hub gh cloc gource xvfb sqlite3
+  build-essential ca-certificates software-properties-common gnupg lsb-release apt-transport-https \
+  curl ripgrep neovim fd-find lsd xclip xdotool maim tree rename neofetch baobab \
+  ffmpeg vlc feh shotwell light xbacklight redshift autorandr compton \
+  imagemagick poppler-utils pandoc lynx fonts-powerline xbindkeys jq \
+  git hub gh cloc gource xvfb sqlite3
 ```
 
 <br>
@@ -21,14 +21,14 @@ sudo apt install -y \
 <details>
 <summary><code>wm</code></summary>
 
-<hr>
+---
 
 - [i3](#i3)
 - [i3-gnome](#i3-gnome)
 - [theme](#theme)
 - [tmux](#tmux)
 
-<hr>
+---
 
 ### [i3](https://i3wm.org/docs/)
 
@@ -50,6 +50,7 @@ rm /tmp/i3-gnome -rf
 sudo update-alternatives --config gdm3-theme.gresource
 # select gnome-shell-theme.gresource
 ```
+
 ```sh
 sudo vim /etc/gdm3/greeter.dconf-defaults
 # [org/gnome/login-screen]
@@ -85,14 +86,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 To install plugins in tmux: `C-b I` or `~/.tmux/plugins/tpm/scripts/install_plugins.sh`.
 To update all plugins: `C-b U` or `~/.tmux/plugins/tpm/scripts/update_plugin.sh`.
 
-
 <br>
 </details>
 
 <details>
 <summary><code>cli</code></summary>
 
-<hr>
+---
 
 - [zsh](#zsh)
 - [antibody](#antibody)
@@ -100,7 +100,7 @@ To update all plugins: `C-b U` or `~/.tmux/plugins/tpm/scripts/update_plugin.sh`
 - [zoxide](#zoxide)
 - [nerd-fonts](#nerd-fonts)
 
-<hr>
+---
 
 ### [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
@@ -150,7 +150,7 @@ fc-cache -f -v
 <details>
 <summary><code>langs</code></summary>
 
-<hr>
+---
 
 - [python](#python-pyenv)
 - [node](#node-fnm)
@@ -158,7 +158,7 @@ fc-cache -f -v
 - [rust](#rust)
 - [go](#go)
 
-<hr>
+---
 
 ### python (pyenv)
 
@@ -197,8 +197,8 @@ curl -fsSL https://fnm.vercel.app/install | bash
 fnm install --lts
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 pnpm add -g \
-	yarn nodemon pm2 turbo typescript eslint @antfu/ni diff-so-fancy \
-	tldr gtop live-server
+ yarn nodemon pm2 turbo typescript eslint @antfu/ni diff-so-fancy \
+ tldr gtop live-server
 ```
 
 ### go
@@ -233,13 +233,13 @@ sudo gem install jekyll bundler
 <details>
 <summary><code>dbs</code></summary>
 
-<hr>
+---
 
 - [redis](#redis)
 - [mongo](#mongo)
 - [postgres](#postgres)
 
-<hr>
+---
 
 ### redis
 
@@ -249,10 +249,12 @@ echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://pack
 sudo apt update
 sudo apt install -y redis
 ```
+
 ```sh
 # (Optional) Start at boot
 sudo systemctl enable redis-server.service
 ```
+
 ```sh
 npm i -g redis-commander
 ```
@@ -261,12 +263,13 @@ npm i -g redis-commander
 
 ```sh
 curl -fsSL https://pgp.mongodb.com/server-6.0.asc | \
-	sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg \
-	--dearmor
+ sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg \
+ --dearmor
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
+
 ```sh
 # (Optional) Start at boot
 sudo systemctl enable mongod
@@ -326,14 +329,13 @@ sudo apt install -y /tmp/dbeaver.deb
 rm /tmp/dbeaver.deb
 ```
 
-
 <br>
 </details>
 
 <details>
 <summary><code>utils</code></summary>
 
-<hr>
+---
 
 - [docker](#docker)
 - [lazygit](#lazygit)
@@ -345,7 +347,7 @@ rm /tmp/dbeaver.deb
 - [zsa](#zsa)
 - [misc](#misc)
 
-<hr>
+---
 
 ### docker
 
@@ -379,11 +381,13 @@ wget -O- https://apt.releases.hashicorp.com/gpg | \
 gpg --dearmor | \
 sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
 ```
+
 ```sh
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
 https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
 sudo tee /etc/apt/sources.list.d/hashicorp.list
 ```
+
 ```sh
 sudo apt update
 sudo apt install -y terraform
@@ -394,7 +398,6 @@ sudo apt install -y terraform
 ```sh
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 ```
-
 
 ### kubernetes
 
@@ -470,7 +473,7 @@ sudo usermod -aG plugdev $USER
 
 #### [fzf](https://github.com/junegunn/fzf)
 
-```sh 
+```sh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
@@ -492,9 +495,21 @@ go install github.com/ericchiang/pup@latest
 
 #### [yq](https://github.com/mikefarah/yq/#install)
 
-```sh 
+```sh
 sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq &&\
     chmod +x /usr/bin/yq
+
+#### btop
+
+```sh
+VERSION=v1.4.0
+wget https://github.com/aristocratos/btop/releases/download/${VERSION}/btop-x86_64-linux-musl.tbz
+tar xf btop-x86_64-linux-musl.tbz
+rm -f btop-x86_64-linux-musl.tbz
+cd btop
+sudo make install
+cd -
+rm -rf btop-x86_64-linux-musl.tbz btop
 ```
 
 <br>
@@ -503,7 +518,7 @@ sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd6
 <details>
 <summary><code>apps</code></summary>
 
-<hr>
+---
 
 - [brave](#brave)
 - [discord](#discord)
@@ -511,7 +526,7 @@ sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd6
 - [chrome.90](#chrome90)
 - [obsidian](#obsidian)
 
-<hr>
+---
 
 ### [brave](https://brave.com/linux/)
 
@@ -557,8 +572,8 @@ google-chrome --simulate-outdated-no-au='2099/12/31' >/dev/null 2>&1 & # open wi
 
 ```sh
 curl -s https://obsidian.md/download \
-	| pup 'a:contains("Deb") attr{href}' \
-	| xargs wget --no-verbose -O /tmp/obsidian.deb
+ | pup 'a:contains("Deb") attr{href}' \
+ | xargs wget --no-verbose -O /tmp/obsidian.deb
 sudo apt install -y /tmp/obsidian.deb
 rm /tmp/obsidian.deb
 ```
@@ -569,12 +584,13 @@ rm /tmp/obsidian.deb
 <details>
 <summary><code>dirs</code></summary>
 
-<hr>
+---
 
 ```sh
 # archives, forks, mine, repros, sandbox, work
 mkdir ~/a ~/f ~/m ~/r ~/s ~/w
 ```
+
 ```sh
 gh repo clone gorango/dotfiles ~/m/dotfiles
 ```
@@ -584,6 +600,7 @@ GitHub Auth
 ```sh
 gh auth login
 ```
+
 ```sh
 ~/.ssh
 ssh-keygen -t ed25519 -C "gospaso@gmail.com" -f gh
@@ -612,7 +629,7 @@ address=/example.com/127.0.0.1#3333
 <details>
 <summary><code>links</code></summary>
 
-<hr>
+---
 
 ### `$HOME`
 
